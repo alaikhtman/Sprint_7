@@ -21,4 +21,16 @@ public class CancelOrderRequest {
         return response;
 
     }
+
+    @Step("Send PUT request to /api/v1/orders/cancel")
+    public Response sendPutRequestCancelOrder1(String track) {
+        Response response = given()
+                .header("Content-type", "application/json")
+                .and()
+                .when()
+                .queryParam("track", track)
+                .put("/api/v1/orders/cancel" );
+        return response;
+
+    }
 }

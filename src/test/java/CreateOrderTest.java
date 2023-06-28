@@ -50,7 +50,7 @@ public class CreateOrderTest {
 
     @After
     public void tearDown() {
-      cancelOrderSteps.cancelOrder(orderTrack);
+      cancelOrderSteps.cancelOrder1(orderTrack);
     }
 
     @Test

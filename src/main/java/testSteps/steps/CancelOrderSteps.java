@@ -19,4 +19,11 @@ public class CancelOrderSteps {
         return response;
 
     }
+
+    public Response cancelOrder1(String track) {
+
+        Response response = cancelOrderRequest.sendPutRequestCancelOrder1(track);
+        return response;
+
+    }
 }
